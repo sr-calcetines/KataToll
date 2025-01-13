@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 
 class VehicleController extends Controller
 {
-    public function goThroughToll(string $id, string $toll_id)
+    public function passToll(string $id, string $toll_id)
     {
        $vehicle = Vehicle::find($id);
        $vehicle->tolls()->attach([(int)$toll_id]);
