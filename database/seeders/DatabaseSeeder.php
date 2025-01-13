@@ -26,13 +26,13 @@ class DatabaseSeeder extends Seeder
         Toll::create([
             "name" => "Pto. de las Pedrizas",
             "city" => "Málaga",
-            "earned" => 0
+            "earnings" => 0
         ]);
 
         Toll::create([
             "name" => "Estepona-Guadiaro",
             "city" => "Málaga",
-            "earned" => 0
+            "earnings" => 0
         ]);
 
         VehicleType::create([
@@ -66,39 +66,39 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $car = Vehicle::create([
-            "vehicle_type_id" => 1,
-            "registration" => "7996HID",
-            "spent" => 0
+            "type_id" => 1,
+            "license" => "7996HID",
+            "total_expense" => 0
         ]);
 
         $bike = Vehicle::create([
-            "vehicle_type_id" => 2,
-            "registration" => "6483UGG",
-            "spent" => 0
+            "type_id" => 2,
+            "license" => "6483UGG",
+            "total_expense" => 0
         ]);
 
         $truck1 = Vehicle::create([
-            "vehicle_type_id" => 3,
-            "registration" => "8882KOS",
-            "spent" => 0
+            "type_id" => 3,
+            "license" => "8882KOS",
+            "total_expense" => 0
         ]);
 
         $truck2 = Vehicle::create([
-            "vehicle_type_id" => 4,
-            "registration" => "6372MND",
-            "spent" => 0
+            "type_id" => 4,
+            "license" => "6372MND",
+            "total_expense" => 0
         ]);
 
         $truck3 = Vehicle::create([
-            "vehicle_type_id" => 5,
-            "registration" => "1998PGS",
-            "spent" => 0
+            "type_id" => 5,
+            "license" => "1998PGS",
+            "total_expense" => 0
         ]);
 
         $truck4 = Vehicle::create([
-            "vehicle_type_id" => 6,
-            "registration" => "1083HJA",
-            "spent" => 0
+            "type_id" => 6,
+            "license" => "1083HJA",
+            "total_expense" => 0
         ]);
     }
 }
