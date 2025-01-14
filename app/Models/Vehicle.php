@@ -14,7 +14,7 @@ class Vehicle extends Model
 
     public function vehicleType()
     {
-        return $this->belongsTo(VehicleType::class);
+        return $this->belongsTo(VehicleType::class,"type_id");
     }
 
     public function tolls()
