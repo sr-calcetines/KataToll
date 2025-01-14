@@ -2,11 +2,11 @@
 In this project it is required to develop a program that models a toll system. In which data on both tolls and vehicles are stored, as well as the relationships between them.Designed with [Laravel](https://laravel.com) framework. 
 
 ## 👀 Views
-![Captura de pantalla 2025-01-09 113330](https://github.com/user-attachments/assets/9eea8e91-94ad-4e74-954b-a63feccd3f91)
-*Correct operation, returns the number entered and the assigned letter*
+![image](https://github.com/user-attachments/assets/185b674f-5a13-45b3-93f7-cefc12bb0eea)
+*Tolls View*
 
-![image](https://github.com/user-attachments/assets/d2d97dd5-53d5-49da-840a-e6fe5f353487)
-*Incorrect operation, returns error text*
+![image](https://github.com/user-attachments/assets/9826f800-2534-43ce-a8a7-60008484395c)
+*Vehicles View*
 
 ## 💻 Languages ​​and tools  
 ![](https://skillicons.dev/icons?i=html,css,php,laravel,git,github,vscode,)
@@ -46,33 +46,37 @@ In this project it is required to develop a program that models a toll system. I
 `php artisan key:generate` `php artisan config:cache` 
 
 ## 🌐 Endpoints 
-For this project, just one endpoint i needed to do all the functionalities; it's used to introduce the number you want to process; if it's correct it will return your number plus the corresponding letter; if it's not, it will show an error message warning you to introduce a valid number.
+For this project, there are 2 endpoints for adding vehicles and tolls. And another one to make a vehicle pass through the toll. For the 2 first you'll need to introduce via postman this json schema to enter the data.
 
-### 🔠 Assingn letter (GET)
-`http://127.0.0.1:8000/api/offers/id`
+### 🏍️ Create Vehicle (POST)
+`http://127.0.0.1:8000/api/vehicles`
 
-*you need to introduce the number where the id goes*
+![image](https://github.com/user-attachments/assets/e8536248-5283-4dd4-9f8d-1e1cdedc8212)
+
+### 🛣️ Create Toll (POST)
+`http://127.0.0.1:8000/api/toll`
+
+![image](https://github.com/user-attachments/assets/a1c6e372-9034-4f67-a3f9-46dd6642c4ce)
+
+### 🚚 Pass Through Toll 🛣️ (PUT)
+`http://127.0.0.1:8000/api/vehicles/id/tolls/id`
 
 ## 🧪 Tests 
 All tests passed. Introduce this line on your console to check it:
 
 `./vendor/bin/phpunit tests`
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/b7dc068b-2746-4738-a0b8-2f9e1c851006" alt="PHP test" width="500"/>
-</p>
+  <img src="https://github.com/user-attachments/assets/495129c1-c17a-4314-8b42-85fa244aab7b" alt="PHP test" width="500"/>
 
 If you want to launch the tests and view them you can put this command in console 3:
 
 `php artisan test --coverage` 
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/fedb145f-ac7b-4582-8bc3-0650835ca905" alt="PHP test coverage" width="500"/>
-</p>
+  <img src="https://github.com/user-attachments/assets/fabb265d-bb44-45a7-8b21-84f15955af8e" alt="PHP test coverage" width="500"/>
 
 ## 🛠️ Jira Backlog 
 
-![Captura de pantalla 2025-01-09 092149](https://github.com/user-attachments/assets/9341f690-3145-41e9-89cf-af1f00b91ee2)
+![image](https://github.com/user-attachments/assets/7277c736-b984-4646-83b6-5768c3620ed8)
 
 ## 🗂️ BBDD Schema
 
